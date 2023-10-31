@@ -1,1 +1,1 @@
-/home/mur/Documents/lab/from /home/mur/Documents/lab/to .jpeg jpeg
+/home/mur/Documents/lab/from /home/mur/Documents/lab/to .jpg jpg
