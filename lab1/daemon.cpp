@@ -18,7 +18,7 @@ void Daemon::run() {
   syslog(LOG_NOTICE, "Daemon started");
 
   while (true) {
-    std::vector<ConfigRow> rows = mConfig.getRows();
+   auto rows = mConfig.getRows();
 
     for (const auto &row : rows) {
       for (const auto &file : fs::directory_iterator(row.dir2))
@@ -68,7 +68,9 @@ Daemon &Daemon::getInstance(const std::string &configPath) {
   return instance;
 }
 
-Daemon::Daemon(const std::string &configPath) {
+Daemon::Daemon(const std::string &configPath)
+: mPathToConfig(fs::absolute(configPath))
+, mConfig(mPathToConfig){
   mPathToConfig = fs::absolute(configPath);
   mConfig = Config(mPathToConfig);
 }

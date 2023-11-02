@@ -9,6 +9,7 @@ public:
   Daemon() = delete;
   Daemon(const Daemon &) = delete;
   Daemon(Daemon &&) = delete;
+  Daemon& operator = (const Daemon& other) = delete;
 
 protected:
   static void handleSignals(int sig);

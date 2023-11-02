@@ -26,4 +26,4 @@ void Config::readConfig(const std::string &path) {
     syslog(LOG_NOTICE, "Incorrect config");
 }
 
-std::vector<ConfigRow> Config::getRows() const { return mRows; }
+const std::vector<ConfigRow>& Config::getRows() const { return mRows; }
