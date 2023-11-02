@@ -12,7 +12,6 @@ struct ConfigRow {
 
 class Config {
 public:
-  Config() = default;
   Config(const std::string &path);
   void readConfig(const std::string &path);
   std::vector<ConfigRow> getRows() const;
