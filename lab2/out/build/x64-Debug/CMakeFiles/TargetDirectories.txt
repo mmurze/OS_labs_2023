@@ -1,0 +1,5 @@
+C:/more/University/IraMultiproc/out/build/x64-Debug/CMakeFiles/host_fifo.dir
+C:/more/University/IraMultiproc/out/build/x64-Debug/CMakeFiles/host_mq.dir
+C:/more/University/IraMultiproc/out/build/x64-Debug/CMakeFiles/host_sock.dir
+C:/more/University/IraMultiproc/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/more/University/IraMultiproc/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
